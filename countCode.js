@@ -11,7 +11,7 @@ async function countCode(letter) {
     
   
     const count = data.reduce((acc, code) => {
-      if (code.toLowerCase().startsWith(letter.toLowerCase())) {
+      if (code.startsWith(letter)) {
         return acc + 1;
       }
       return acc;
